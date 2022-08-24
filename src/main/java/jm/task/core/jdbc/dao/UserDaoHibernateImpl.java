@@ -13,13 +13,9 @@ import org.hibernate.query.criteria.HibernateCriteriaBuilder;
 import org.hibernate.query.criteria.JpaCriteriaQuery;
 
 
-
 public class UserDaoHibernateImpl implements UserDao {
     private final Session session = Util.getSessionFactory().openSession();
 
-    public UserDaoHibernateImpl() {
-
-    }
     @Override
     public void createUsersTable() {
         Transaction tx = null;
